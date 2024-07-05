@@ -4,7 +4,7 @@ Trying boost skills on regressor task.
 ## Train proj on House_pricing dataset from Kaggle.
 
 # Technologies used:
-- Python 3.11.9
+- Python 3.11
 - Numpy
 - Pandas
 - XGBoost
