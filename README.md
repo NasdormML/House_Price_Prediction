@@ -1,7 +1,5 @@
-# House_price_try
-Trying boost skills on regressor task.
-
 ## Train proj on House_pricing dataset from Kaggle.
+Boost regression skills
 
 # Technologies used:
 - Python 3.11
