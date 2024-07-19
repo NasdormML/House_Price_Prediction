@@ -1,16 +1,26 @@
-## Train proj on House_pricing dataset from Kaggle.
-Boost regression skills
+# House Price Prediction
 
-# Technologies used:
-- Python 3.11
-- Numpy
-- Pandas
-- XGBoost
-- Scikit-learn
-- Matplotlib
+This project aims to predict house prices using machine learning algorithms. The dataset includes features such as the size of the house, number of bedrooms, location, etc.
 
-# Project structure
-- 'house/' - full dataset
-- 'XGB_regress.ipynb' - main notebook with preprocess, model and predict
-- 'new_predictions.csv' - test.csv predict based on model from XGB_regress
-- 'visualTry.ipynb' - visual house_pricing dataset
+## Project Structure
+
+- `house/`: Folder containing the dataset.
+- `XGB_regress.ipynb, Visual.ipynb`: Jupyter notebooks for exploratory data analysis and model evaluation.
+- `xgb_model.pkl`: Saved XGB model.
+- `README.md`: Project overview and instructions.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following libraries installed:
+- pandas
+- numpy
+- scikit-learn
+- xgboost
+- matplotlib
+- seaborn
+
+You can install them using:
+```bash
+pip install pandas numpy scikit-learn xgboost matplotlib seaborn
