@@ -39,14 +39,14 @@ Several new features were created to enhance the model's predictive power:
 ## Modeling
 
 The primary model used in this project is XGBoost, chosen for its high performance with tabular data. The model was trained with the following hyperparameters:
-- Learning rate: 0.0.5
+- Learning rate: 0.05
 - Subsample: 0.8
-- Reg lambda: 0.5
+- Reg lambda: 3
 - Reg alpha: 1
-- n_estimators: 300
-- Gamma: 0.3
-- Colsample by tree: 0.6
-- Max depth: 5
+- n_estimators: 200
+- Gamma: 0.2
+- Colsample by tree: 0.2
+- Max depth: 4
 
 ## Evaluation
 
@@ -55,8 +55,8 @@ The model was evaluated using the following metrics:
 - Root Mean Squared Error (RMSE)
 
 Results:
-- MAE: 16480
-- RMSE: 128
+- MAE: 15734
+- RMSE: 125
 
 ## Getting Started
 
