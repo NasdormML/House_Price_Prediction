@@ -15,7 +15,6 @@ This project aims to predict house prices using machine learning algorithms. The
   - `XGB_regress.ipynb`: Notebook for model training and evaluation.
 - `xgb_models/`: Folder with XGB models.
   - `xgb_model.pkl`: Saved main XGB model.
-  - `xgb_sandbox.pkl`: Saved test XGB model.
 - `README.md`: Project overview and instructions.
 
 ## Data
