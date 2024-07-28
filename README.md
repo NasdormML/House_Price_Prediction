@@ -13,8 +13,50 @@ This project aims to predict house prices using machine learning algorithms. The
 - `notebooks/`: Jupyter notebooks for exploratory data analysis and model evaluation.
   - `Visual.ipynb`: Exploratory Data Analysis notebook.
   - `XGB_regress.ipynb`: Notebook for model training and evaluation.
-- `xgb_model.pkl`: Saved XGB model.
+- `xgb_models/`: Folder with XGB models.
+  - `xgb_model.pkl`: Saved main XGB model.
+  - `xgb_sandbox.pkl`: Saved test XGB model.
 - `README.md`: Project overview and instructions.
+
+## Data
+
+The dataset used in this project includes the following features:
+- Size of the house (square footage)
+- Number of bedrooms
+- Number of bathrooms
+- Location (neighborhood)
+- Year built
+- Sale price (target variable)
+
+The data is preprocessed to handle missing values, encode categorical variables, and normalize numerical features.
+
+## Feature Engineering
+
+Several new features were created to enhance the model's predictive power:
+- **Age**: Difference between the year sold and the year built.
+- **TotalAreaRatio**: Ratio of total basement area to ground living area.
+
+## Modeling
+
+The primary model used in this project is XGBoost, chosen for its high performance with tabular data. The model was trained with the following hyperparameters:
+- Learning rate: 0.05
+- Subsample: 0.8
+- Reg lambda: 3
+- Reg alpha: 1
+- n_estimators: 200
+- Gamma: 0.2
+- Colsample by tree: 0.2
+- Max depth: 4
+
+## Evaluation
+
+The model was evaluated using the following metrics:
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+
+Results:
+- MAE: 15734
+- RMSE: 125
 
 ## Getting Started
 
