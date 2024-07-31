@@ -13,8 +13,13 @@ This project aims to predict house prices using machine learning algorithms. The
 - `notebooks/`: Jupyter notebooks for exploratory data analysis and model evaluation.
   - `Visual.ipynb`: Exploratory Data Analysis notebook.
   - `XGB_regress.ipynb`: Notebook for model training and evaluation.
-- `xgb_models/`: Folder with XGB models.
+- `models/`: Folder with XGB models.
   - `xgb_model.pkl`: Saved main XGB model.
+  - `trained_model.pkl` Saved model from scripts.
+- `scripts/`:
+  -`save_model.py`: Script for saving model.
+  -`deploy_model.py` Script for deploy model.
+- `requirements.txt`: Project requirements.
 - `README.md`: Project overview and instructions.
 
 ## Data
