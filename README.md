@@ -15,10 +15,10 @@ This project aims to predict house prices using machine learning algorithms. The
   - `XGB_regress.ipynb`: Notebook for model training and evaluation.
 - `models/`: Folder with XGB models.
   - `xgb_model.pkl`: Saved main XGB model.
-  - `trained_model.pkl` Saved model from scripts.
+  - `trained_model.pkl`: Saved model from scripts.
 - `scripts/`:
-  -`save_model.py`: Script for saving model.
-  -`deploy_model.py` Script for deploy model.
+    - `save_model.py`: Script for saving model.
+    - `deploy_model.py`: Script for deploy model.
 - `requirements.txt`: Project requirements.
 - `README.md`: Project overview and instructions.
 
