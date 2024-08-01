@@ -1,0 +1,15 @@
+artifact_uri: /Users/nasdorm/Documents/GitHub/House_price_try/notebooks/../House_price_try/mlruns/760934571221797881/84a0beb442d44697aed2083fb943c880/artifacts
+end_time: 1722513065730
+entry_point_name: ''
+experiment_id: '760934571221797881'
+lifecycle_stage: active
+run_id: 84a0beb442d44697aed2083fb943c880
+run_name: legendary-midge-519
+run_uuid: 84a0beb442d44697aed2083fb943c880
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722513064436
+status: 3
+tags: []
+user_id: nasdorm

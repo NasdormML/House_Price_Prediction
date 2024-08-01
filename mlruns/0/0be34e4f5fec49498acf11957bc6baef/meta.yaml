@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/nasdorm/Documents/GitHub/House_price_try/mlruns/0/0be34e4f5fec49498acf11957bc6baef/artifacts
+end_time: 1722504272485
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0be34e4f5fec49498acf11957bc6baef
+run_name: sassy-stag-676
+run_uuid: 0be34e4f5fec49498acf11957bc6baef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722504270596
+status: 3
+tags: []
+user_id: nasdorm
