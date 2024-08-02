@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11+-brightgreen)
 ![XGBoost](https://img.shields.io/badge/XGBoost-v2.1.0-orange)
 ![Seaborn](https://img.shields.io/badge/Seaborn-v0.13.2-blue)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-v3.9.0-red)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-v1.5.1-yellow)
 
 This project aims to predict house prices using machine learning algorithms. The dataset includes features such as the size of the house, number of bedrooms, location, etc.
@@ -17,8 +18,8 @@ This project aims to predict house prices using machine learning algorithms. The
   - `xgb_model.pkl`: Saved main XGB model.
   - `trained_model.pkl`: Saved model from scripts.
 - `scripts/`:
-    - `save_model.py`: Script for saving model.
-    - `deploy_model.py`: Script for deploy model.
+  - `save_model.py`: Script for saving the model.
+  - `deploy_model.py`: Script for deploying the model.
 - `requirements.txt`: Project requirements.
 - `README.md`: Project overview and instructions.
 
@@ -77,3 +78,23 @@ Make sure you have the following libraries installed:
 You can install them using:
 ```bash
 pip install pandas numpy scikit-learn xgboost matplotlib seaborn
+```
+# Installation:
+Clone the repository:
+```bash
+git clone https://github.com/NasdormML/House_price_try.git
+cd House_price_try
+```
+
+# Install the required packages:
+```bash
+pip install -r requirements.txt
+```
+# Usage
+Navigate to the notebooks/ directory and open the Jupyter notebooks to explore the data and train the model:
+
+`Visual.ipynb`: For exploratory data analysis.
+
+`XGB_regress.ipynb`: For model training and evaluation.
+
+
