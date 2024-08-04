@@ -5,6 +5,7 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-v0.13.2-blue)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-v3.9.0-red)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-v1.5.1-yellow)
+[![CI](https://github.com/NasdormML/House_price_try/actions/workflows/ci.yml/badge.svg)](https://github.com/NasdormML/House_price_try/actions/workflows/ci.yml)
 
 This project aims to predict house prices using machine learning algorithms. The dataset includes features such as the size of the house, number of bedrooms, location, etc.
 
