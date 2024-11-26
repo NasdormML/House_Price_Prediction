@@ -7,95 +7,107 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-v1.5.1-yellow)
 [![CI](https://github.com/NasdormML/House_price_try/actions/workflows/ci.yml/badge.svg)](https://github.com/NasdormML/House_price_try/actions/workflows/ci.yml)
 
-This project aims to predict house prices using machine learning algorithms. The dataset includes features such as the size of the house, number of bedrooms, location, etc.
+## Overview
+This project predicts house prices based on key features such as size, location, and age. It leverages advanced machine learning techniques, including **XGBoost**, to deliver accurate price estimates. These insights can assist real estate agents, buyers, and sellers in making informed decisions.
+
+## Key Features
+- **Predictive Model**: Built using XGBoost, optimized for tabular data.
+- **Feature Engineering**: Created custom features like house age and area ratios to boost model performance.
+- **Performance Metrics**: Achieved competitive MAE and RMSE scores.
+- **End-to-End Workflow**: Includes data preprocessing, exploratory analysis, modeling, and deployment.
+
+---
+
+## Results
+- **Mean Absolute Error (MAE)**: 15,734  
+- **Root Mean Squared Error (RMSE)**: 125  
+
+The model provides reliable price predictions, reducing uncertainty in property valuation.
+
+---
 
 ## Project Structure
+```
+House_price_prediction/
+├── house/                  # Dataset folder
+├── notebooks/              # Jupyter notebooks
+│   ├── Visual.ipynb        # Exploratory Data Analysis
+│   └── XGB_regress.ipynb   # Model training and evaluation
+├── models/                 # Saved models
+│   ├── xgb_model.pkl       # Main XGBoost model
+│   └── trained_model.pkl   # Alternative trained model
+├── scripts/                # Utility scripts
+│   ├── save_model.py       # Script for saving models
+│   └── deploy_model.py     # Script for deployment
+├── requirements.txt        # Dependencies
+└── README.md               # Project overview
+```
 
-- `house/`: Folder containing the dataset.
-- `notebooks/`: Jupyter notebooks for exploratory data analysis and model evaluation.
-  - `Visual.ipynb`: Exploratory Data Analysis notebook.
-  - `XGB_regress.ipynb`: Notebook for model training and evaluation.
-- `models/`: Folder with XGB models.
-  - `xgb_model.pkl`: Saved main XGB model.
-  - `trained_model.pkl`: Saved model from scripts.
-- `scripts/`:
-  - `save_model.py`: Script for saving the model.
-  - `deploy_model.py`: Script for deploying the model.
-- `requirements.txt`: Project requirements.
-- `README.md`: Project overview and instructions.
+---
 
 ## Data
+The dataset contains key features influencing house prices:
+- **Size**: Total area in square footage.
+- **Bedrooms & Bathrooms**: Count of each.
+- **Location**: Neighborhood information.
+- **Year Built**: Construction year.
+- **Sale Price**: Target variable for prediction.
 
-The dataset used in this project includes the following features:
-- Size of the house (square footage)
-- Number of bedrooms
-- Number of bathrooms
-- Location (neighborhood)
-- Year built
-- Sale price (target variable)
+### Data Preprocessing:
+- Imputation for missing values.
+- Encoding for categorical variables.
+- Scaling for numerical features.
 
-The data is preprocessed to handle missing values, encode categorical variables, and normalize numerical features.
-
-## Feature Engineering
-
-Several new features were created to enhance the model's predictive power:
-- **Age**: Difference between the year sold and the year built.
-- **TotalAreaRatio**: Ratio of total basement area to ground living area.
+---
 
 ## Modeling
+### Model: XGBoost
+- Chosen for its speed and performance on tabular datasets.
+- Trained using advanced hyperparameters:
+  - **Learning Rate**: 0.05
+  - **Max Depth**: 4
+  - **Subsample**: 0.8
+  - **Colsample by Tree**: 0.2
+  - **n_estimators**: 200
 
-The primary model used in this project is XGBoost, chosen for its high performance with tabular data. The model was trained with the following hyperparameters:
-- Learning rate: 0.05
-- Subsample: 0.8
-- Reg lambda: 3
-- Reg alpha: 1
-- n_estimators: 200
-- Gamma: 0.2
-- Colsample by tree: 0.2
-- Max depth: 4
+### Validation
+- Applied **cross-validation** to ensure consistent results.
 
-## Evaluation
+---
 
-The model was evaluated using the following metrics:
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-
-Results:
-- MAE: 15734
-- RMSE: 125
-
-## Getting Started
+## How to Run
 
 ### Prerequisites
-
-Make sure you have the following libraries installed:
-- pandas
-- numpy
-- scikit-learn
-- xgboost
-- matplotlib
-- seaborn
-
-You can install them using:
+Install required libraries:
 ```bash
 pip install pandas numpy scikit-learn xgboost matplotlib seaborn
 ```
-# Installation:
-Clone the repository:
-```bash
-git clone https://github.com/NasdormML/House_price_try.git
-cd House_price_try
-```
 
-# Install the required packages:
-```bash
-pip install -r requirements.txt
-```
-# Usage
-Navigate to the notebooks/ directory and open the Jupyter notebooks to explore the data and train the model:
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/NasdormML/House_price_try.git
+   cd House_price_try
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-`Visual.ipynb`: For exploratory data analysis.
+### Usage
+- **EDA**: Run `Visual.ipynb` to explore the dataset and trends.
+- **Model Training**: Use `XGB_regress.ipynb` to train and evaluate the predictive model.
 
-`XGB_regress.ipynb`: For model training and evaluation.
+---
 
+## Business Value
+- **Accurate Pricing**: Helps set realistic property prices, increasing transaction efficiency.
+- **Market Insights**: Identifies key factors driving property value.
+- **Risk Reduction**: Assists buyers in avoiding overpayment.
 
+---
+
+## Contact
+Have questions or feedback? Reach out via email: **nasdorm.ml@inbox.ru**
+
+---
