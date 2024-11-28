@@ -39,7 +39,6 @@ def test_training():
 
 
 
-    # Инициализация модели (код из вашего ноутбука)
     model = Pipeline(steps=[
     ('preprocessor', preprocessor),
     ('regressor', XGBRegressor(n_estimators=200, max_depth=4,
@@ -52,19 +51,17 @@ def test_training():
                                objective='reg:squarederror'))
                                ])
 
-    # Обучение модели
     model.fit(X_train, y_train)
     
     # Проверка, что модель обучена
     assert model is not None, "Model training failed"
     
-    # Прогнозирование
     predictions = model.predict(X_test)
     
     # Проверка, что предсказания не пустые
     assert len(predictions) == len(y_test), "Prediction failed"
     
-    # Оценка (например, RMSE)
+    # Оценка
     mae = mean_absolute_error(y_test, predictions,)
     assert mae < 16300, f"Model performance is not sufficient, RMSE: {mae}"
 
